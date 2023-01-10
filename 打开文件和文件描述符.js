@@ -6,8 +6,8 @@ fs.open('./foo.txt', (err, fd) => {
     // 提供文件描述符
     console.log(fd)
     // 通过文件描述符进行一些读取操作
-    fs.readfile(fd, (err, data) => {})
-    fs.writefile(fd, (err, data) => {})
+    fs.readFile(fd, (err, data) => {})
+    fs.writeFile(fd, (err, data) => {})
     // 读取文件信息
     fs.fstat(fd, (err, stats) => {
       // 文件信息
