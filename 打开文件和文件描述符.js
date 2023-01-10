@@ -17,6 +17,8 @@ fs.open('./foo.txt', (err, fd) => {
       } else {
         console.log(stats)
       }
+      // 最后一个回调函数，当调完这个函数的时候，关闭文件
+      fs.close(fd)
     })
   }
 })
